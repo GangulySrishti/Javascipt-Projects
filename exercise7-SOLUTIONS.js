@@ -29,3 +29,14 @@ var newsfeed = [
 		timeline: "Javascript is preeetyy cool!"
 	}
 ];
+
+function signIn(user, pwd){
+    if(user === database[0].username && pwd === database[0].password){
+        console.log(newsfeed);
+    }
+    else{
+        alert("Wrong password or username!");
+    }
+}
+
+signIn(prompt("Enter username:"), prompt("Enter password: "));
